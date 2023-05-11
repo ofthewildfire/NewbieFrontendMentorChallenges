@@ -1,0 +1,64 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 0.9375rem;
+  /* This is 15px w/ a presummed default size of 16px from the browser.*/
+}
+
+/*
+========================
+ + HEADER + 
+========================
+*/
+
+header * {
+  text-align: center;
+  margin: .5em 2em;
+}
+
+header>h1 {
+  color: var(--VeryDarkMagenta);
+}
+
+header>p {
+  color: var(--DarkGrayishMagenta);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+/* Rating Blocks */
+
+.rating {
+  text-align: center;
+  border-radius: 10px;
+  background: var(--LightGrayishMagenta);
+  padding: 1.1em 0;
+  width: 90%;
+  margin: 1em auto;
+}
+
+.rating p {
+  margin-top: .5em;
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
+}
