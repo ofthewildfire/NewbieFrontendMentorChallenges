@@ -137,6 +137,7 @@ header>p {
     margin: 1em 0;
   }
 
+
   /* Rating blocks */
 
   .rating-container {
@@ -150,17 +151,26 @@ header>p {
 
   .rating p {
     display: inline-block;
-    color: var(--VeryDarkMagenta);
-    font-weight: 700;
-    margin-top: 0;
   }
 
   .rating-container>.rating:first-of-type {
     border: 2px solid purple;
+    transform: translateX(-10%);
   }
 
   .rating-container>.rating:last-of-type {
     border: 2px solid pink;
+    transform: translateX(10%);
   }
+
+  /* Review cards */
+
+  .desktop-flex-wrapper>.review {
+    width: calc(90%/3);
+    min-height: 250px;
+    max-height: 250px;
+  }
+
+
 
 }
