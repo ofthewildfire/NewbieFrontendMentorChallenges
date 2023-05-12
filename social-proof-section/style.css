@@ -111,3 +111,56 @@ header>p {
 }
 
 /* End of styles */
+
+
+/* Media Queries */
+
+@media (min-width: 1000px) {
+  body {
+    background-color: aqua;
+  }
+
+  .desktop-flex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-flex-wrapper>header,
+  .desktop-flex-wrapper>.rating-container {
+    width: 45%;
+  }
+
+  header h1,
+  header p {
+    text-align: left;
+    margin: 1em 0;
+  }
+
+  /* Rating blocks */
+
+  .rating-container {
+    border: 2px solid gold;
+  }
+
+  .rating {
+    width: 80%;
+    border: 2px solid red;
+  }
+
+  .rating p {
+    display: inline-block;
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .rating-container>.rating:first-of-type {
+    border: 2px solid purple;
+  }
+
+  .rating-container>.rating:last-of-type {
+    border: 2px solid pink;
+  }
+
+}
