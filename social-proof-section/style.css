@@ -205,7 +205,7 @@ header>p {
 
   .desktop-flex-wrapper>.review {
     max-height: 350px;
-    min-height: 350px;
+    min-height: 300px;
     width: calc(92%/3);
     font-size: 1.75rem;
     padding: 2em;
