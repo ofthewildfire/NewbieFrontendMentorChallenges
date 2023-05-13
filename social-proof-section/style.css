@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: 'League Spartan', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 0 2em;
 }
 
@@ -135,8 +135,8 @@ header>p {
 */
 
 @media (min-width: 990px) and (max-width: 1030px) {
-  /* Review card */
 
+  /* Review card */
   .desktop-flex-wrapper>.review {
     max-height: 500px;
     min-height: 500px;
