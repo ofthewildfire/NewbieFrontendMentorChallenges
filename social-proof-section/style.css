@@ -20,8 +20,7 @@ html {
 
 body {
   font-family: 'League Spartan', sans-serif;
-  font-size: 0.9375rem;
-  /* This is 15px w/ a presummed default size of 16px from the browser.*/
+  font-size: 1.5rem;
   padding: 0 2em;
 }
 
@@ -135,7 +134,24 @@ header>p {
 ================================================
 */
 
+@media (min-width: 990px) and (max-width: 1030px) {
+  /* Review card */
+
+  .desktop-flex-wrapper>.review {
+    max-height: 500px;
+    min-height: 500px;
+    width: calc(92%/3);
+    padding: 2em;
+    /* To center the review text nicely.  */
+  }
+}
+
 @media (min-width: 990px) {
+
+  body {
+    padding: 2em 7em;
+  }
+
   .desktop-flex-wrapper {
     align-items: center;
     display: flex;
@@ -155,13 +171,13 @@ header>p {
   }
 
   header h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: .75;
   }
 
   header p {
-    font-size: 1.1rem;
+    font-size: 2rem;
     max-width: 475px;
     /* this is not applying due to some margin on the p element fix ideas. */
   }
@@ -169,12 +185,13 @@ header>p {
   /* =========== Rating blocks =========== */
 
   .rating {
-    width: 80%;
+    width: 100%;
+    font-size: 2rem;
   }
 
   .rating p {
     display: inline-block;
-    padding-left: 1.5em;
+    padding-left: 1em;
   }
 
   .rating-container>.rating:first-of-type {
@@ -188,14 +205,16 @@ header>p {
   /* =========== Review cards =========== */
 
   .desktop-flex-wrapper>.review {
-    max-height: 250px;
-    min-height: 250px;
+    max-height: 350px;
+    min-height: 350px;
     width: calc(92%/3);
+    font-size: 1.75rem;
+    padding: 2em;
 
     /* To center the review text nicely.  */
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .desktop-flex-wrapper>.review:first-child {
@@ -205,5 +224,4 @@ header>p {
   .desktop-flex-wrapper>.review:last-child {
     transform: translateY(10%);
   }
-
 }
