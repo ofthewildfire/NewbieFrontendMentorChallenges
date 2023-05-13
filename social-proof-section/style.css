@@ -188,11 +188,8 @@ header>p {
   /* =========== Review cards =========== */
 
   .desktop-flex-wrapper>.review {
-    /* max-height: 250px;
-    min-height: 250px; */
-    /* Not sure if this is the best height... smaller looks cramped at 990px */
-    max-height: 275px;
-    min-height: 275px;
+    max-height: 250px;
+    min-height: 250px;
     width: calc(92%/3);
 
     /* To center the review text nicely.  */
