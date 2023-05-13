@@ -31,15 +31,14 @@ body {
 ========================
 */
 
-/* header * {
+header * {
   text-align: center;
-} */
+}
 
 header h1,
 header p {
   margin: .5em auto;
   max-width: 350px;
-  text-align: center;
 }
 
 header>h1 {
@@ -163,6 +162,8 @@ header>p {
 
   header p {
     font-size: 1.1rem;
+    max-width: 475px;
+    /* this is not applying due to some margin on the p element fix ideas. */
   }
 
   /* =========== Rating blocks =========== */
@@ -187,9 +188,17 @@ header>p {
   /* =========== Review cards =========== */
 
   .desktop-flex-wrapper>.review {
-    max-height: 250px;
-    min-height: 250px;
+    /* max-height: 250px;
+    min-height: 250px; */
+    /* Not sure if this is the best height... smaller looks cramped at 990px */
+    max-height: 275px;
+    min-height: 275px;
     width: calc(92%/3);
+
+    /* To center the review text nicely.  */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
 
   .desktop-flex-wrapper>.review:first-child {
